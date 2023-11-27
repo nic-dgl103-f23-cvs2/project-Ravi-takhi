@@ -8,16 +8,20 @@ html {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
+    color: #9a9faa;
+  }
+  .color-theme-dark
+  {
     color: black;
-    background-image: url(images/banner-5.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: top; 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
+  }
+  .color-theme-light
+  {
+    color: white;
+  }
+  .color-theme-highlighted
+  {
+    color: #d58d44;
+  }
 
 
 /* ==>  Nav Style <== */
@@ -39,7 +43,7 @@ nav li {
   margin: 15px auto;
 }
 
-.nav-links{
+.nav-links,.logo{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -56,9 +60,37 @@ nav li {
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 2.4rem;
 }
-
+/* ==>  Hero Style <== */
+.hero
+{
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  background-image: url(images/banner-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: top; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.hero h1
+{
+   font-size: 12vw;
+   text-transform:uppercase;
+   border: solid;
+   letter-spacing: 3rem;
+}
+.hero p
+{
+  font-size: 2vw;
+  font-weight: 500;
+  text-transform:uppercase;
+  border: solid;
+}
 
 
 
@@ -97,7 +129,6 @@ nav li {
   #navbar-toggle {
     display: none;
   }
-
 } 
 
   
