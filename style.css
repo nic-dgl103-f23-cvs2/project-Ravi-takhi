@@ -1,9 +1,61 @@
 html {
     font-size: 62.5%;
   }
-  
-  body {
+  body 
+  {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
     font-size: 1.6rem;
     color: black;
-    margin: 0;
-  }
+    background-image: url(images/banner-5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjust as needed */
+    background-position: top; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+/* ==>  Nav Style <== */
+
+nav {
+  font-size: 1.8rem;
+  background-color :rgb(15, 13, 13,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+
+nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+  

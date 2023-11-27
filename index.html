@@ -3,39 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Other Layout Techniques</title>
+    <title>Perspective design solution</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function showNav() {
+        let mainNav = document.getElementById("main-nav");
+        let navbarToggle = document.getElementById("navbar-toggle");
+
+        if (navbarToggle.classList.contains("active")) {
+          mainNav.style.display = "none";
+          navbarToggle.classList.remove("active");
+        } else {
+          mainNav.style.display = "flex";
+          navbarToggle.classList.add("active");
+        }
+      }
+    </script>
     <!-- DGL 103 CVS1 - Ravinder Singh - Project -->
   </head>
 
   <body>
     <header>
-      <!-- Website Logo -->
-      <img src="images/logo.png" width="100" alt="form logo" />
-      <!-- Menu Bar-->
+      <!-- Menu Bar -->
       <nav>
-        <ul>
+        <!-- Menu Button -->
+        <span id="navbar-toggle" onclick="showNav()"><i class="fa fa-bars"></i></span>
+        <!-- Website Logo -->
+        <img class="logo" src="images/logo.PNG" width="100" alt="form logo" />
+        <!-- Menu List -->
+        <ul id="main-nav">
           <li>
-            <a href="index.html">Home</a>
+            <a class="nav-links" href="index.html">Home</a>
           </li>
           <li>
-            <a href="how-it-works.html">Portfolio</a>
+            <a class="nav-links" href="how-it-works.html">Portfolio</a>
           </li>
           <li>
-            <a href="features.html">Design & Build</a>
+            <a class="nav-links" href="features.html">Design & Build</a>
           </li>
           <li>
-            <a href="press.html">Special Feature</a>
+            <a class="nav-links" href="press.html">Special Feature</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a class="nav-links" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Hero -->
-      <section>
+      <section class="hero">
         <!-- Will add background image-->
         <h1>Modern</h1>
         <p>Providing customized design solution that fits every space</p>
