@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
   }
+
   body 
   {
     font-family: "Josefin Sans", sans-serif;
@@ -10,13 +11,15 @@ html {
     color: black;
     background-image: url(images/banner-5.jpg);
     background-repeat: no-repeat;
-    background-size: contain; /* Adjust as needed */
-    background-position: top; /* Adjust as needed */
+    background-size: contain; 
+    background-position: top; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
 }
+
+
 /* ==>  Nav Style <== */
 
 nav {
@@ -36,15 +39,13 @@ nav li {
   margin: 15px auto;
 }
 
-.nav-links,
-.logo {
+.nav-links{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .logo {
   display: inline-block;
-  font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -57,5 +58,46 @@ nav li {
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
 }
+
+
+
+
+/*   ==> Media query for desktop <==  */ 
+@media screen and (min-width: 768px) {
+
+  /* ==>  Nav Style <== */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+} 
 
   
