@@ -4,12 +4,21 @@ html {
 
   body 
   {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Montserrat',serif;
     margin: 0;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
     color: #9a9faa;
+    background-color: #f2f2f2;
   }
+  .wrapper-width {
+    width: 1170px;
+    margin: auto;
+  }
+
+  /* ==> Color theme <== */
+
   .color-theme-dark
   {
     color: black;
@@ -80,15 +89,58 @@ nav li {
 {
    font-size: 12vw;
    text-transform:uppercase;
-   border: solid;
-   letter-spacing: 3rem;
+   letter-spacing: 2rem;
 }
 .hero p
 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 500;
   text-transform:uppercase;
-  border: solid;
+}
+
+/* ==>  Service Style <== */
+.service
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  background-color: white;
+  padding: 10px 40px;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+}
+
+.service-title h2
+{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.service-title h3
+{
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+.service-detail
+{
+  text-align: left;
+}
+.service-detail h4
+{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  margin: 5px 0;
+} 
+.service-detail p 
+{
+  margin: 0;
+  padding: 2px 5px;
+}
+.service-list-1,.service-list-2,.service-list-3,.service-list-4
+{
+  margin-bottom: 20px;
 }
 
 
@@ -133,7 +185,10 @@ nav li {
   {
     height: 100vh;
   }
-
+  .hero h1
+  {
+    letter-spacing: 3rem;
+  }
 } 
 
   
