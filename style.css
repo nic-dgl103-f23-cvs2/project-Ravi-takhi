@@ -101,13 +101,20 @@ nav li {
 /* ==>  Service Style <== */
 .service
 {
-  display: flex;
-  flex-direction: column;
   margin: 0 20px;
   background-color: white;
   padding: 10px 40px;
-  gap: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+}
+.service-content
+{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.service img
+{
+  display: none;
 }
 
 .service-title h2
@@ -138,7 +145,7 @@ nav li {
   margin: 0;
   padding: 2px 5px;
 }
-.service-list-1,.service-list-2,.service-list-3,.service-list-4
+.service-list
 {
   margin-bottom: 20px;
 }
@@ -147,6 +154,11 @@ nav li {
 
 /*   ==> Media query for desktop <==  */ 
 @media screen and (min-width: 768px) {
+
+  body 
+  {
+    font-size: 1.6rem;
+  }
 
   /* ==>  Nav Style <== */
 
@@ -189,6 +201,52 @@ nav li {
   {
     letter-spacing: 3rem;
   }
+
+  /* ==>  Service Style <== */
+
+.service
+{
+  width: calc(100% - 300px);  
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box; 
+}
+.service-detail
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-list
+{
+  flex: 0 0 48%;
+  margin: 1%; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+.service-content
+{
+    gap: 0;
+    flex: 0 0 60%;
+   box-sizing: border-box;
+   padding: 0 50px;
+}
+.service-title
+{
+  margin: 1%; 
+  padding: 20px; 
+}
+.service-img {
+  align-self: flex-end;
+  flex: 0 0 40%;
+  box-sizing: border-box;
+}
+.service img
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 } 
 
   
