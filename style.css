@@ -180,7 +180,7 @@ nav li {
 
 
 /*   ==> Media query for desktop <==  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1170px) {
   body {
     font-size: 1.6rem;
   }
@@ -227,7 +227,7 @@ nav li {
 
   /* ==>  Service Style <== */
 
-  .service {
+  .service,.portfolio {
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -263,5 +263,64 @@ nav li {
     max-width: 100%;
     height: auto;
     display: block;
+  }
+  /* ==>  portfolio Style <== */
+  .portfolio
+  {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .portfolio-title
+  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  .portfolio-title-heading
+  {
+    flex: 1;
+  }
+  .portfolio-title-heading h2
+  {
+    font-size: 2.5rem;
+  } 
+  .portfolio-title-heading h3
+  {
+    font-size: 5rem;
+    font-weight: 700;
+  } 
+  .portfolio-title p
+  {
+    flex: 2;
+    border-left: solid;
+    border-color: #d58d44;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin: 5px 20px;
+  }
+  .portfolio-card
+  {
+    display: flex;
+    align-items: center;
+  }
+  .portfolio-card img 
+  {
+    flex: 1;
+    height: 500px;
+    z-index: -1;
+  }
+  .portfolio-card-description
+  {
+    flex: 1;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-left: -25%;
+    max-height: 500px;
+  }
+  .portfolio-card > div:nth-child(1)
+  {
+    margin-left:0;
+    margin-right: -25%;
   }
 }
