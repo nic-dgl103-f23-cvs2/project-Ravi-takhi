@@ -1,43 +1,38 @@
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
 
-  body 
-  {
-    font-family: 'Montserrat',serif;
-    margin: 0;
-    padding: 0;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    color: #9a9faa;
-    background-color: #f2f2f2;
-  }
-  .wrapper-width {
-    width: 1170px;
-    margin: auto;
-  }
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #9a9faa;
+  background-color: #f2f2f2;
+}
+.wrapper-width {
+  width: 1170px;
+  margin: auto;
+}
 
-  /* ==> Color theme <== */
+/* ==> Color theme <== */
 
-  .color-theme-dark
-  {
-    color: black;
-  }
-  .color-theme-light
-  {
-    color: white;
-  }
-  .color-theme-highlighted
-  {
-    color: #d58d44;
-  }
-
+.color-theme-dark {
+  color: black;
+}
+.color-theme-light {
+  color: white;
+}
+.color-theme-highlighted {
+  color: #d58d44;
+}
 
 /* ==>  Nav Style <== */
 
 nav {
   font-size: 1.8rem;
-  background-color :rgb(15, 13, 13,0.5);
+  background-color: rgb(19, 18, 18);
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -51,7 +46,8 @@ nav li {
   margin: 5px auto;
 }
 
-.nav-links,.logo{
+.nav-links,
+.logo {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -71,92 +67,121 @@ nav li {
   font-size: 2.4rem;
 }
 /* ==>  Hero Style <== */
-.hero
-{
+.hero {
   display: flex;
   flex-direction: column;
-  border: solid;
   background-image: url(images/banner-3.jpg);
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: top; 
+  background-size: cover;
+  background-position: top;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 50vh;
 }
-.hero h1
-{
-   font-size: 12vw;
-   text-transform:uppercase;
-   letter-spacing: 2rem;
+.hero h1 {
+  font-size: 12vw;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
 }
-.hero p
-{
+.hero p {
   font-size: 1.8vw;
   font-weight: 500;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 /* ==>  Service Style <== */
-.service
-{
+.service {
   margin: 0 20px;
   background-color: white;
-  padding: 10px 40px;
+  padding: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
 }
-.service-content
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.service img {
+  display: none;
+}
+
+.service-title h2,.portfolio h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.service-title h3,.portfolio h3 {
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+.service-detail {
+  text-align: left;
+}
+.service-detail h4 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  margin: 5px 0;
+}
+.service-detail p {
+  margin: 0;
+  padding: 2px 5px;
+}
+.service-list {
+  margin-bottom: 20px;
+}
+
+/* ==>  portfolio Style <== */
+.portfolio
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.portfolio-content
 {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.service img
+.portfolio-card-description
 {
-  display: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding-bottom: 20px;
 }
-
-.service-title h2
+.portfolio-card img
 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 100;
+  width: 100%;
+  height: auto;
 }
-.service-title h3
+.portfolio-card h4,.portfolio-card h5,.portfolio-card p,.portfolio-card a
 {
-  font-size: 2.8rem;
   margin: 0;
   padding: 0;
+  padding: 5px 20px;
 }
-.service-detail
-{
-  text-align: left;
-}
-.service-detail h4
+.portfolio-card h4
 {
   font-size: 2rem;
-  margin: 0;
-  padding: 0;
-  margin: 5px 0;
-} 
-.service-detail p 
-{
-  margin: 0;
-  padding: 2px 5px;
 }
-.service-list
+.portfolio-card h5
 {
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+.portfolio-card a
+{
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 
 
 
-/*   ==> Media query for desktop <==  */ 
+/*   ==> Media query for desktop <==  */
 @media screen and (min-width: 768px) {
-
-  body 
-  {
+  body {
     font-size: 1.6rem;
   }
 
@@ -192,61 +217,51 @@ nav li {
   #navbar-toggle {
     display: none;
   }
-   /* ==>  Hero Style <== */
-  .hero
-  {
+  /* ==>  Hero Style <== */
+  .hero {
     height: 100vh;
   }
-  .hero h1
-  {
+  .hero h1 {
     letter-spacing: 3rem;
   }
 
   /* ==>  Service Style <== */
 
-.service
-{
-  width: calc(100% - 300px);  
-  margin: 0 auto;
-  display: flex;
-  padding: 10px 0 0 10px;
-  box-sizing: border-box; 
-}
-.service-detail
-{
-  display: flex;
-  flex-wrap: wrap;
-}
-.service-list
-{
-  flex: 0 0 48%;
-  margin: 1%; 
-  padding: 20px; 
-  box-sizing: border-box;
-}
-.service-content
-{
+  .service {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 0 10px;
+    box-sizing: border-box;
+  }
+  .service-detail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-list {
+    flex: 0 0 48%;
+    margin: 1%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .service-content {
     gap: 0;
     flex: 0 0 60%;
-   box-sizing: border-box;
-   padding: 0 50px;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  .service-title {
+    margin: 1%;
+    padding: 20px;
+  }
+  .service-img {
+    align-self: flex-end;
+    flex: 0 0 40%;
+    box-sizing: border-box;
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
-.service-title
-{
-  margin: 1%; 
-  padding: 20px; 
-}
-.service-img {
-  align-self: flex-end;
-  flex: 0 0 40%;
-  box-sizing: border-box;
-}
-.service img
-{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-} 
-
-  

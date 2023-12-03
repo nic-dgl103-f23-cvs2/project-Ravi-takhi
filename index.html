@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perspective design solution</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script>
       function showNav() {
         let mainNav = document.getElementById("main-nav");
@@ -26,45 +29,47 @@
   <body>
     <header>
       <!-- Menu Bar -->
-        <nav>
-          <!-- Menu Button -->
-          <span id="navbar-toggle" onclick="showNav()"><i class="fa fa-bars"></i></span>
-          <!-- Website Logo -->
-          <a href="#" class="logo">logo</a>
-          <!-- Menu List -->
-          <ul id="main-nav">
-            <li>
-              <a class="nav-links" href="index.html">Home</a>
-            </li>
-            <li>
-              <a class="nav-links" href="how-it-works.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="nav-links" href="features.html">Design & Build</a>
-            </li>
-            <li>
-              <a class="nav-links" href="press.html">Special Feature</a>
-            </li>
-            <li>
-              <a class="nav-links" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <nav>
+        <!-- Menu Button -->
+        <span id="navbar-toggle" onclick="showNav()"
+          ><i class="fa fa-bars"></i
+        ></span>
+        <!-- Website Logo -->
+        <a href="#" class="logo">logo</a>
+        <!-- Menu List -->
+        <ul id="main-nav">
+          <li>
+            <a class="nav-links" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-links" href="how-it-works.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-links" href="features.html">Design & Build</a>
+          </li>
+          <li>
+            <a class="nav-links" href="press.html">Special Feature</a>
+          </li>
+          <li>
+            <a class="nav-links" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="wrapper-width">
-          <h1 class="color-theme-light">Modern</h1>
-          <p class="color-theme-highlighted">Providing customized design solution that fits every space</p>
-        </div>
+        <h1 class="color-theme-light">Modern</h1>
+        <p class="color-theme-highlighted">
+          Providing customized design solution that fits every space
+        </p>
       </section>
       <!-- What we do-->
-      <section class="service wrapper-width">
+      <section class="service">
         <div class="service-content">
           <div class="service-title">
             <h2 class="color-theme-highlighted">What we do</h2>
-            <h3 class="color-theme-dark"> Architecture 10 years’ experience</h3>
+            <h3 class="color-theme-dark">Architecture 10 years’ experience</h3>
             <p>
               As a trusted contractor in the heart of the Comox Valley, we
               understand the significance of delivering exceptional and reliable
@@ -76,15 +81,16 @@
               <span class="fa fa-car fa-3x color-theme-highlighted"></span>
               <h4 class="color-theme-dark">Quality</h4>
               <p>
-                Delivering excellence in architectural design, ensuring the highest
-                standards of quality for our customers
+                Delivering excellence in architectural design, ensuring the
+                highest standards of quality for our customers
               </p>
             </section>
             <section class="service-list">
               <span class="fa fa-car fa-3x color-theme-highlighted"></span>
               <h4 class="color-theme-dark">Easy Access</h4>
               <p>
-                Conveniently accessible, we ensure ease of reach for all your needs
+                Conveniently accessible, we ensure ease of reach for all your
+                needs
               </p>
             </section>
             <section class="service-list">
@@ -99,54 +105,63 @@
               <span class="fa fa-car fa-3x color-theme-highlighted"></span>
               <h4 class="color-theme-dark">The team work</h4>
               <p>
-                Collaborating as a team, we engage in collective brainstorming to
-                ensure timely project delivery
+                Collaborating as a team, we engage in collective brainstorming
+                to ensure timely project delivery
               </p>
             </section>
           </div>
         </div>
         <div class="service-img">
-          <img src="images/services-img.jpg" alt="service image" width="600">
+          <img src="images/services-img.jpg" alt="service image" width="600" />
         </div>
-        
-        
       </section>
       <!--Portfolio-->
-      <section>
-        <h2>Latest projects</h2>
+      <section class="portfolio">
+        <div class="portfolio-title">
+          <h2 class="color-theme-highlighted">Explore Portfolios</h2>
+          <h3 class="color-theme-dark">Latest projects</h3>
+          <p> This is the demo text</p>
+        </div>
+        <div class="portfolio-content">
+          <section class="portfolio-card">
+            <img src="images/Exterior.jpg" width="600" alt="Exterior design" />
+            <div class="portfolio-card-description">
+              <h4 class="color-theme-highlighted">Exterior</h4>
+              <h5 class="color-theme-dark">Modern house design</h5>
+              <p>
+                Our architecture design transforms living spaces with a modern house
+                exterior that captivates. Clean lines, avant-garde materials, and
+                expansive windows define a sleek aesthetic. We seamlessly integrate
+                indoor and outdoor elements, fostering a harmonious blend of
+                functionality and style. With a focus on innovation, our design
+                showcases a contemporary vision that redefines modern living.
+                Elevate your home with our cutting-edge approach to architectural
+                excellence.
+              </p>
+              <a class="color-theme-highlighted" href="#"> View Project</a>
+            </div>
+          </section>
+          <!-- Card 2-->
+          <section class="portfolio-card">
+            <img src="images/interior.jpg" width="600" alt="Interior design" />
+            <div class="portfolio-card-description">
+              <h4 class="color-theme-highlighted">Interior</h4>
+              <h5 class="color-theme-dark">Modern lobby area</h5>
+              <p>
+                Immerse yourself in our modern house interior design, a testament to
+                refined sophistication and functionality. Every detail harmonizes
+                sleek aesthetics with practical living, from innovative furniture
+                choices to thoughtfully curated decor elements. Open spaces and
+                natural light create an inviting ambiance, enhancing the sense of
+                spaciousness. Our architectural prowess transforms interiors into a
+                contemporary haven, blending comfort with cutting-edge design.
+              </p>
+              <a class="color-theme-highlighted" href="#"> View Project</a>
+            </div>
+          </section>
+        </div>
         <!-- Card 1-->
-        <section>
-          <img src="images/Exterior.jpg" width="600" alt="Exterior design" />
-          <h3>Exterior</h3>
-          <h4>Modern house design</h4>
-          <p>
-            Our architecture design transforms living spaces with a modern house
-            exterior that captivates. Clean lines, avant-garde materials, and
-            expansive windows define a sleek aesthetic. We seamlessly integrate
-            indoor and outdoor elements, fostering a harmonious blend of
-            functionality and style. With a focus on innovation, our design
-            showcases a contemporary vision that redefines modern living.
-            Elevate your home with our cutting-edge approach to architectural
-            excellence.
-          </p>
-          <a href="#"> View Project</a>
-        </section>
-        <!-- Card 2-->
-        <section>
-          <img src="images/interior.jpg" width="600" alt="Interior design" />
-          <h3>Interior</h3>
-          <h4>Modern lobby area</h4>
-          <p>
-            Immerse yourself in our modern house interior design, a testament to
-            refined sophistication and functionality. Every detail harmonizes
-            sleek aesthetics with practical living, from innovative furniture
-            choices to thoughtfully curated decor elements. Open spaces and
-            natural light create an inviting ambiance, enhancing the sense of
-            spaciousness. Our architectural prowess transforms interiors into a
-            contemporary haven, blending comfort with cutting-edge design.
-          </p>
-          <a href="#"> View Project</a>
-        </section>
+        
       </section>
       <!-- Our partner-->
       <section>
@@ -159,33 +174,35 @@
           clients’ projects in the most efficient and transparent manner.
         </p>
         <figure>
-          <img src="images/partner1.jpg" alt="Team image" width="200">
+          <img src="images/partner1.jpg" alt="Team image" width="200" />
           <figcaption>George Slomp</figcaption>
           <h3>Founder</h3>
         </figure>
         <figure>
-          <img src="images/partner2.jpg" alt="Team image" width="200">
+          <img src="images/partner2.jpg" alt="Team image" width="200" />
           <figcaption>Peter Brain</figcaption>
           <h3>Designer</h3>
         </figure>
       </section>
       <!-- Inverstors -->
       <section>
-        <img src="images/netzero.jpg" alt="Netzero home" width="200">
-        <img src="images/chba_member.png" alt="CHBA Member" width="200">
-        <img src="images/passive_house.png" alt="Passive House" width="200">
+        <img src="images/netzero.jpg" alt="Netzero home" width="200" />
+        <img src="images/chba_member.png" alt="CHBA Member" width="200" />
+        <img src="images/passive_house.png" alt="Passive House" width="200" />
       </section>
       <!-- Call to action -->
       <section>
         <section>
-          <img src="images/call.PNG" alt="Call" width="200"> <!-- Image will be replace by google icon-->
-          <h3> Our phone</h3>
-          <p> 778-647-2266 </p>
+          <img src="images/call.PNG" alt="Call" width="200" />
+          <!-- Image will be replace by google icon-->
+          <h3>Our phone</h3>
+          <p>778-647-2266</p>
         </section>
         <section>
-          <img src="images/email.PNG" alt="email" width="200"> <!-- Image will be replace by google icon-->
-          <h3> Email</h3>
-          <p> office@buildwithperspective.com </p>
+          <img src="images/email.PNG" alt="email" width="200" />
+          <!-- Image will be replace by google icon-->
+          <h3>Email</h3>
+          <p>office@buildwithperspective.com</p>
         </section>
         <a href="#"> Let's Chat</a>
       </section>
