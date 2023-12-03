@@ -106,12 +106,12 @@ nav li {
   display: none;
 }
 
-.service-title h2,.portfolio h2 {
+.service-title h2,.portfolio h2,.experts h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 100;
 }
-.service-title h3,.portfolio h3 {
+.service-title h3,.portfolio h3,.experts h3 {
   font-size: 2.8rem;
   margin: 0;
   padding: 0;
@@ -176,6 +176,26 @@ nav li {
   text-transform: capitalize;
   text-decoration: underline;
 }
+/* ==>  experts Style <== */
+.experts
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.experts-content
+{
+  display: flex;
+  text-align: center;
+}
+.experts-content figure,.experts-content h4
+{
+  margin: 0;
+}
+.experts-content img
+{
+  width: 100%;
+}
 
 
 
@@ -227,7 +247,7 @@ nav li {
 
   /* ==>  Service Style <== */
 
-  .service,.portfolio {
+  .service,.portfolio,.experts{
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -322,5 +342,42 @@ nav li {
   {
     margin-left:0;
     margin-right: -25%;
+  }
+
+  /* ==>  experts Style <== */
+  .experts
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 60px;
+    margin: 50px auto;
+    
+  }
+  .experts-heading
+  {
+    flex: 1.5;
+  }
+  .experts-heading p 
+  {
+    padding: 0 20px;
+  }
+  .experts-heading-title
+  {
+    border-bottom: solid;
+    border-color: #d58d44;
+  }
+  .experts-content
+  {
+    flex: 1;
+  }
+  .experts-heading h2
+  {
+    font-size: 2.5rem;
+  } 
+  .experts-heading h3
+  {
+    font-size: 5rem;
+    font-weight: 700;
   }
 }
