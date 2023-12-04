@@ -196,7 +196,72 @@ nav li {
 {
   width: 100%;
 }
+/* ==>  Footer Style <== */
 
+footer
+{
+  border: solid;
+  border-color: black;
+  background-color: black;
+  padding: 0 20px;
+}
+.footer-info
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address > div
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.footer-menu ul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu div:nth-child(1),
+.footer-menu div:nth-child(2) {
+  display: none;
+}
+
+.inputfield-signup
+{
+    font-size: 1.6rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+    border: 1px solid #d58d44;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    outline: none;
+}
+.signup-button
+{
+  border: 1px solid #d58d44;
+  background: rgba(20, 20, 20, .6);
+  font-size: 1.8rem;
+  color: white;
+  margin: 20px 0;
+  padding: 10px 50px;
+  width: 50%;
+}
+.footer-disclaimer
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-disclaimer a
+{
+  color: #d58d44;
+}
 
 
 /*   ==> Media query for desktop <==  */
