@@ -66,6 +66,8 @@ nav li {
   color: rgba(255, 255, 255, 0.8);
   font-size: 2.4rem;
 }
+/* ------------------   Home Page   ------------------------*/
+
 /* ==>  Hero Style <== */
 .hero {
   display: flex;
@@ -106,12 +108,16 @@ nav li {
   display: none;
 }
 
-.service-title h2,.portfolio h2,.experts h2 {
+.service-title h2,
+.portfolio h2,
+.experts h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 100;
 }
-.service-title h3,.portfolio h3,.experts h3 {
+.service-title h3,
+.portfolio h3,
+.experts h3 {
   font-size: 2.8rem;
   margin: 0;
   padding: 0;
@@ -134,92 +140,80 @@ nav li {
 }
 
 /* ==>  portfolio Style <== */
-.portfolio
-{
+.portfolio {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
 }
-.portfolio-content
-{
+.portfolio-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.portfolio-card-description
-{
+.portfolio-card-description {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   padding-bottom: 20px;
 }
-.portfolio-card img
-{
+.portfolio-card img {
   width: 100%;
   height: auto;
 }
-.portfolio-card h4,.portfolio-card h5,.portfolio-card p,.portfolio-card a
-{
+.portfolio-card h4,
+.portfolio-card h5,
+.portfolio-card p,
+.portfolio-card a {
   margin: 0;
   padding: 0;
   padding: 5px 20px;
 }
-.portfolio-card h4
-{
+.portfolio-card h4 {
   font-size: 2rem;
 }
-.portfolio-card h5
-{
+.portfolio-card h5 {
   font-size: 2.2rem;
 }
-.portfolio-card a
-{
+.portfolio-card a {
   text-transform: capitalize;
   text-decoration: underline;
 }
 /* ==>  experts Style <== */
-.experts
-{
+.experts {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
 }
-.experts-content
-{
+.experts-content {
   display: flex;
   text-align: center;
 }
-.experts-content figure,.experts-content h4
-{
+.experts-content figure,
+.experts-content h4 {
   margin: 0;
 }
-.experts-content img
-{
+.experts-content img {
   width: 100%;
 }
 /* ==>  Footer Style <== */
 
-footer
-{
+footer {
   border: solid;
   border-color: black;
   background-color: black;
   padding: 0 20px;
 }
-.footer-info
-{
+.footer-info {
   display: flex;
   flex-direction: column;
 }
 
-.footer-address > div
-{
+.footer-address > div {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
 }
-.footer-menu ul
-{
+.footer-menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -229,40 +223,101 @@ footer
   display: none;
 }
 
-.inputfield-signup
-{
-    font-size: 1.6rem;
-    margin-top: 20px;
-    padding: 10px 0;
-    width: 100%;
-    border: 1px solid #d58d44;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: white;
-    outline: none;
-}
-.signup-button
-{
+.inputfield-signup {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%;
   border: 1px solid #d58d44;
-  background: rgba(20, 20, 20, .6);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  outline: none;
+}
+.signup-button {
+  display: flex;
+  border: 1px solid #d58d44;
+  background: rgba(20, 20, 20, 0.6);
   font-size: 1.8rem;
   color: white;
   margin: 20px 0;
   padding: 10px 50px;
   width: 50%;
 }
-.footer-disclaimer
-{
+.footer-disclaimer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.footer-disclaimer a
-{
+.footer-disclaimer a {
   color: #d58d44;
 }
 
+/* ------------------   Contact Page   ------------------------*/
+
+/* ==>  Contact banner Style <== */
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/contactus-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.contact-banner h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.contact-banner p {
+  font-size: 2.2rem;
+  padding: 0;
+  margin: 0;
+}
+.contact-us {
+  width: 100%;
+}
+.contact-us div {
+  padding: 0 10px;
+}
+
+/* ==>  Form Style <== */
+
+.inputfield-text,
+.input-select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-submit {
+  width: 100%;
+  background-color: #d58d44;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
 
 /*   ==> Media query for desktop <==  */
 @media screen and (min-width: 1170px) {
@@ -312,7 +367,12 @@ footer
 
   /* ==>  Service Style <== */
 
-  .service,.portfolio,.experts,.footer-container,.footer-disclaimer{
+  .service,
+  .portfolio,
+  .experts,
+  .footer-container,
+  .footer-disclaimer,
+  .contact-us {
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -350,32 +410,26 @@ footer
     display: block;
   }
   /* ==>  portfolio Style <== */
-  .portfolio
-  {
+  .portfolio {
     padding: 0;
     margin-top: 20px;
   }
-  .portfolio-title
-  {
+  .portfolio-title {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0;
   }
-  .portfolio-title-heading
-  {
+  .portfolio-title-heading {
     flex: 1;
   }
-  .portfolio-title-heading h2
-  {
+  .portfolio-title-heading h2 {
     font-size: 2.5rem;
-  } 
-  .portfolio-title-heading h3
-  {
+  }
+  .portfolio-title-heading h3 {
     font-size: 5rem;
     font-weight: 700;
-  } 
-  .portfolio-title p
-  {
+  }
+  .portfolio-title p {
     flex: 2;
     border-left: solid;
     border-color: #d58d44;
@@ -384,101 +438,100 @@ footer
     padding: 0 50px;
     margin: 5px 20px;
   }
-  .portfolio-card
-  {
+  .portfolio-card {
     display: flex;
     align-items: center;
   }
-  .portfolio-card img 
-  {
+  .portfolio-card img {
     flex: 1;
     height: 500px;
     z-index: -1;
   }
-  .portfolio-card-description
-  {
+  .portfolio-card-description {
     flex: 1;
     box-sizing: border-box;
     box-shadow: none;
     margin-left: -25%;
     max-height: 500px;
   }
-  .portfolio-card > div:nth-child(1)
-  {
-    margin-left:0;
+  .portfolio-card > div:nth-child(1) {
+    margin-left: 0;
     margin-right: -25%;
   }
 
   /* ==>  experts Style <== */
-  .experts
-  {
+  .experts {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     gap: 60px;
     margin: 50px auto;
-    
   }
-  .experts-heading
-  {
+  .experts-heading {
     flex: 1.5;
   }
-  .experts-heading p 
-  {
+  .experts-heading p {
     padding: 0 20px;
   }
-  .experts-heading-title
-  {
+  .experts-heading-title {
     border-bottom: solid;
     border-color: #d58d44;
   }
-  .experts-content
-  {
+  .experts-content {
     flex: 1;
   }
-  .experts-heading h2
-  {
+  .experts-heading h2 {
     font-size: 2.5rem;
-  } 
-  .experts-heading h3
-  {
+  }
+  .experts-heading h3 {
     font-size: 5rem;
     font-weight: 700;
   }
 
   /* ==>  portfolio Style <== */
-  .footer-container
-  {
+  .footer-container {
     padding: 0;
   }
-  .footer-address-container
-  {
+  .footer-address-container {
     margin-right: 20px;
     padding-right: 20px;
   }
   .footer-menu div:nth-child(1),
-.footer-menu div:nth-child(2) {
-  display: flex;
-}
-.footer-menu
-{
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.footer-menu-list
-{
-  display: flex;
-  flex-direction: column;
-}
-.footer-menu-list li 
-{
-  line-height: 30px;
-}
-.footer-disclaimer
-{
-  padding: 0;
-  text-align: left;
-}
+  .footer-menu div:nth-child(2) {
+    display: flex;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .footer-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-menu-list li {
+    line-height: 30px;
+  }
+  .footer-disclaimer {
+    padding: 0;
+    text-align: left;
+  }
 
+  /* ------------------   Contact Page   ------------------------*/
+
+  /* ==>  Form Style <== */
+  .contact-us {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  iframe {
+    margin: 20px 0;
+    flex: 1.5;
+  }
+  .contact-us div {
+    padding: 0 20px;
+    flex: 1;
+  }
 }

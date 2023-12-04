@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perspective design solution</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      function showNav() {
+        let mainNav = document.getElementById("main-nav");
+        let navbarToggle = document.getElementById("navbar-toggle");
+
+        if (navbarToggle.classList.contains("active")) {
+          mainNav.style.display = "none";
+          navbarToggle.classList.remove("active");
+        } else {
+          mainNav.style.display = "flex";
+          navbarToggle.classList.add("active");
+        }
+      }
+    </script>
+    <!-- DGL 103 CVS1 - Ravinder Singh - Project -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Menu Bar -->
+      <nav>
+        <!-- Menu Button -->
+        <span id="navbar-toggle" onclick="showNav()"
+          ><i class="fa fa-bars"></i
+        ></span>
+        <!-- Website Logo -->
+        <a href="#" class="logo">logo</a>
+        <!-- Menu List -->
+        <ul id="main-nav">
+          <li>
+            <a class="nav-links" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-links" href="how-it-works.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-links" href="features.html">Design & Build</a>
+          </li>
+          <li>
+            <a class="nav-links" href="press.html">Special Feature</a>
+          </li>
+          <li>
+            <a class="nav-links" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-banner">
+        <h2 class="color-theme-light">Get in touch</h2>
+        <h3 class="color-theme-light">Contact</h3>
+      </section>
+      <section class="contact-us">
+          <iframe width="100%" height="560" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <div>
+            <h3 class="color-theme-highlighted"> Fill the form</h3>
+            <h4 class="color-theme-dark">Let's discuss your project</h4>
+            <form action="/action_page.php">
+              <label for="fname">Name</label>
+              <input class="inputfield-text" type="text" id="fname" name="firstname" placeholder="Your fullname..">
+          
+              <label for="lname">Email</label>
+              <input class="inputfield-text" type="email" id="email" name="email" placeholder="Your email address..">
+          
+              <label for="country">Your Country</label>
+              <select class="input-select" id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="message">Message</label>
+              <textarea>Type your message..</textarea>
+              <input class="input-submit" type="submit" value="Submit">
+            </form>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-container">
+        <div class="footer-address-container">
+          <div class="footer-info">
+            <h2 class="color-theme-highlighted">Logo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              commodi enim eos autem blanditiis
+            </p>
+          </div>
+          <div class="footer-address">
+            <div>
+              <span class="fa fa-car fa-2x color-theme-highlighted"></span>
+              <p>2463E Rosewall Crescent, Courtenay, BC V9N 1H8</p>
+            </div>
+            <div>
+              <span class="fa fa-car fa-2x color-theme-highlighted"></span>
+              <p>778-647-2266</p>
+            </div>
+            <div>
+              <span class="fa fa-car fa-2x color-theme-highlighted"></span>
+              <p>office@buildwithperspective.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-menu">
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Menu</h3>
+            <ul>
+              <li>How it works</li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Testimonials&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+          </div>
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Service</h3>
+            <ul>
+              <li>Our team</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Stores</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="color-theme-light">Newsletter</h3>
+            <ul>
+              <li>
+                Sign up for our mailing list to get latest updates and offers
+              </li>
+              <li>
+                <form action="#" method="POST">
+                  <input
+                    class="inputfield-signup"
+                    type="text"
+                    required
+                    placeholder="  Enter your Email"
+                    name="signup"
+                    id="signup"
+                  />
+                  <input
+                    class="signup-button"
+                    type="submit"
+                    name="SignUp"
+                    value="SignUp"
+                  />
+                </form>
+              </li>
+              <li>
+                <span class="fa fa-car fa-2x color-theme-highlighted"></span>
+                <span class="fa fa-car fa-2x color-theme-highlighted"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="footer-disclaimer">
+        <a href="#"><b>Terms and Conditions</b></a>
+        <b> &copy; 2023 Form | All rights reserved</b>
+      </section>
+    </footer>
+  </body>
+</html>
