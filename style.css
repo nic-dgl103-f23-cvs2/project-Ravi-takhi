@@ -319,6 +319,44 @@ textarea {
   resize: none;
 }
 
+/* ------------------   Portfolio Page   ------------------------*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.blog-content
+{
+  display: flex;
+  flex-direction: column;
+}
+.blog-content figure
+{
+  margin: 0;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.blog-content img
+{
+  width: 100%;
+}
+.blog-content figcaption,.blog-content h2,.blog-content a
+{
+  padding: 0 10px;
+}
+.blog-content h2
+{
+  font-size: 1.8rem;
+}
+.blog-content a
+{
+  text-decoration: underline;
+}
+
+
 /*   ==> Media query for desktop <==  */
 @media screen and (min-width: 1170px) {
   body {
