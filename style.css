@@ -312,7 +312,7 @@ footer
 
   /* ==>  Service Style <== */
 
-  .service,.portfolio,.experts{
+  .service,.portfolio,.experts,.footer-container,.footer-disclaimer{
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -445,4 +445,40 @@ footer
     font-size: 5rem;
     font-weight: 700;
   }
+
+  /* ==>  portfolio Style <== */
+  .footer-container
+  {
+    padding: 0;
+  }
+  .footer-address-container
+  {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .footer-menu div:nth-child(1),
+.footer-menu div:nth-child(2) {
+  display: flex;
+}
+.footer-menu
+{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.footer-menu-list
+{
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu-list li 
+{
+  line-height: 30px;
+}
+.footer-disclaimer
+{
+  padding: 0;
+  text-align: left;
+}
+
 }
