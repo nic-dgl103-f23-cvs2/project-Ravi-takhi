@@ -232,7 +232,6 @@ footer {
   border-top: none;
   border-left: none;
   border-right: none;
-  color: white;
   outline: none;
 }
 .signup-button {
@@ -321,6 +320,8 @@ textarea {
 
 /* ------------------   Portfolio Page   ------------------------*/
 
+/* ==>  Blog Style <== */
+
 .blog {
   display: flex;
   flex-direction: column;
@@ -357,20 +358,23 @@ textarea {
 }
 
 
+
 /*   ==> Media query for desktop <==  */
 @media screen and (min-width: 1170px) {
   body {
     font-size: 1.6rem;
   }
 
-  /* ==>  Nav Style <== */
+  /* ==>  Nav Style desktop <== */
 
   nav {
+    font-weight: 500;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 0;
     height: 70px;
     align-items: center;
+    gap: 20px;
   }
 
   nav ul {
@@ -403,14 +407,15 @@ textarea {
     letter-spacing: 3rem;
   }
 
-  /* ==>  Service Style <== */
+  /* ==>  Service Style desktop <== */
 
   .service,
   .portfolio,
   .experts,
   .footer-container,
   .footer-disclaimer,
-  .contact-us {
+  .contact-us,
+  .blog {
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -447,7 +452,7 @@ textarea {
     height: auto;
     display: block;
   }
-  /* ==>  portfolio Style <== */
+  /* ==>  portfolio Style desktop <== */
   .portfolio {
     padding: 0;
     margin-top: 20px;
@@ -497,7 +502,7 @@ textarea {
     margin-right: -25%;
   }
 
-  /* ==>  experts Style <== */
+  /* ==>  experts Style desktop <== */
   .experts {
     flex-direction: row;
     flex-wrap: wrap;
@@ -526,7 +531,7 @@ textarea {
     font-weight: 700;
   }
 
-  /* ==>  portfolio Style <== */
+  /* ==>  portfolio Style desktop <== */
   .footer-container {
     padding: 0;
   }
@@ -557,7 +562,7 @@ textarea {
 
   /* ------------------   Contact Page   ------------------------*/
 
-  /* ==>  Form Style <== */
+  /* ==>  Form Style desktop <== */
   .contact-us {
     padding: 0;
     display: flex;
@@ -572,4 +577,15 @@ textarea {
     padding: 0 20px;
     flex: 1;
   }
+
+/* ------------------   Portfolio Page   ------------------------*/
+
+/* ==>  Blog Style desktop <== */
+
+.blog-content div
+{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 }
