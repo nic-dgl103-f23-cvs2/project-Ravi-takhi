@@ -82,7 +82,7 @@ nav li {
   height: 50vh;
 }
 .hero h1 {
-  font-size: 12vw;
+  font-size: 11vw;
   text-transform: uppercase;
   letter-spacing: 2rem;
 }
@@ -439,12 +439,20 @@ textarea {
   }
   /* ==>  Hero Style <== */
   .hero {
-    height: 100vh;
+    height: 85vh;
   }
   .hero h1 {
+    font-weight: 900;
     letter-spacing: 3rem;
+    padding: 0;
+    margin: 0;
   }
-
+  .hero p
+  {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+  }
   /* ==>  Service Style desktop <== */
 
   .service,
@@ -453,7 +461,8 @@ textarea {
   .footer-container,
   .footer-disclaimer,
   .contact-us,
-  .blog {
+  .blog,
+  .cta {
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -567,6 +576,23 @@ textarea {
   .experts-heading h3 {
     font-size: 5rem;
     font-weight: 700;
+  }
+
+  /* ==>  CTA Style <== */
+
+  .cta
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
+  .cta section
+  {
+    flex: 1;
+    
+    padding: 50px 0;
   }
 
   /* ==>  portfolio Style desktop <== */
