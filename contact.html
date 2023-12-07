@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective design solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat&family=Prompt&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function showNav() {
+        let mainNav = document.getElementById("main-nav");
+        let navbarToggle = document.getElementById("navbar-toggle");
+
+        if (navbarToggle.classList.contains("active")) {
+          mainNav.style.display = "none";
+          navbarToggle.classList.remove("active");
+        } else {
+          mainNav.style.display = "flex";
+          navbarToggle.classList.add("active");
+        }
+      }
+    </script>
+    <!-- DGL 103 CVS1 - Ravinder Singh - Project -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Menu Bar -->
+      <nav>
+        <!-- Menu Button -->
+        <span id="navbar-toggle" onclick="showNav()"><i class="fa fa-bars color-theme-highlighted"></i></span>
+        <!-- Website Logo -->
+        <img src="images/logo.PNG" alt="logo" width="80">
+        <!-- Menu List -->
+        <ul id="main-nav">
+          <li>
+            <a class="nav-links"  href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-links" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-links" href="#">Design & Build</a>
+          </li>
+          <li>
+            <a class="nav-links" href="#">Special Feature</a>
+          </li>
+          <li>
+            <a class="nav-links" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-banner">
+        <h2 class="color-theme-light">Get in touch</h2>
+        <h3 class="color-theme-light">Contact</h3>
+      </section>
+      <section class="contact-us">
+          <iframe width="500" height="560" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.161165186433!2d-125.00047762426165!3d49.670102771453614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548815fec12a547b%3A0xe4875afed0bb3c46!2sPerspective%20Design%20Build%20Ltd.!5e0!3m2!1sen!2sca!4v1701374862464!5m2!1sen!2sca"></iframe>
+          <div>
+            <h3 class="color-theme-highlighted"> Fill the form</h3>
+            <h4 class="color-theme-dark">Let's discuss your project</h4>
+            <form action="/action_page.php">
+              <label for="fname">Name</label>
+              <input class="inputfield-text" type="text" id="fname" name="firstname" placeholder="Your Full Name...">
+          
+              <label for="email">Email</label>
+              <input class="inputfield-text" type="email" id="email" name="email" placeholder="Your Email Address...">
+          
+              <label for="country">Your Country</label>
+              <select class="input-select" id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="message">Message</label>
+              <textarea placeholder="Type your message.." id="message"></textarea>
+              <input class="input-submit" type="submit" value="Submit">
+            </form>
+          </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-container">
+        <div class="footer-address-container">
+          <div class="footer-info">
+            <img src="images/logo.PNG" alt="logo" width="100">
+            <p>
+              Transforming Visions into Homes | Perspective Design Building - Expertise in Design and Build Services
+            </p>
+          </div>
+          <div class="footer-address">
+            <div>
+              <i class="fa fa-map-marker fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>2463E Rosewall Crescent, Courtenay, BC V9N 1H8</p>
+            </div>
+            <div>
+              <i class="fa fa-phone fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>778-647-2266</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>office@buildwithperspective.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Menu</h3>
+            <ul>
+              <li> <a href="#">How it works</a> </li>
+              <li><a href="#">Features</a></li>
+              <li> <a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+          </div>
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Service</h3>
+            <ul>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Stores</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="color-theme-light">Newsletter</h3>
+            <ul>
+              <li>
+                Sign up for our mailing list to get latest updates and offers
+              </li>
+              <li>
+                <form action="#" method="POST">
+                  <input class="inputfield-signup" type="text" required placeholder="  Enter your Email" name="signup" id="signup">
+                  <input class="signup-button" type="submit" name="SignUp" value="SignUp">
+                </form>
+              </li>
+              <li class="footer-media-icons">
+                <a href="https://www.facebook.com/people/Perspective-Design-Build-Ltd/100063958185786/">
+                  <i class="fa fa-facebook fa-1x color-theme-light" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/perspectivedesignbuildltd/">
+                  <i class="fa fa-instagram fa-1x color-theme-light" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="footer-disclaimer">
+        <a href="#"><b>Terms and Conditions</b></a>
+        <b> &copy; 2023 Form | All rights reserved</b>
+        <p class="color-theme-light">This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+      </section>
+    </footer>
+  </body>
+</html>

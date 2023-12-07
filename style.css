@@ -1,0 +1,863 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #9a9faa;
+  background-color: #f2f2f2;
+}
+.wrapper-width {
+  width: 1170px;
+  margin: auto;
+}
+
+/* ==> Color theme <== */
+
+.color-theme-dark {
+  color: black;
+}
+
+.color-theme-light {
+  color: white;
+}
+
+.color-theme-highlighted {
+  color: #d58d44;
+}
+
+
+/* ------------------   Home Page   ------------------------*/
+
+/* ==>  Nav Style <== */
+
+nav {
+  font-size: 1.8rem;
+  background-color: rgb(19, 18, 18);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+
+nav li {
+  margin: 5px auto;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.4rem;
+}
+nav a:hover  /* changing the color of Menu list elements */
+{
+  color: #d58d44;
+}
+
+
+/* ==>  Hero Style <== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/banner-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.hero h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  transition: transform 10s;
+  transition: color 1s; /* For modern browsers */
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.hero h1:hover {   /* zoom in and out animation effect */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out 0.2s;
+  color: #c98c50
+}
+.hero p  /* Reference of this animation of from this website. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations */
+{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.hero p {
+  font-size: 3.2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ==>  Service Style <== */
+.service {
+  margin: 0 20px;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.service img {
+  display: none;
+}
+
+.service-title h2,
+.portfolio h2,
+.experts h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.service-title h3,
+.portfolio h3,
+.experts h3 {
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+.service-title p
+{
+  font-style: italic;
+}
+.service-detail {
+  text-align: left;
+}
+.service-detail h4 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  margin: 5px 0;
+}
+.service-detail p {
+  margin: 0;
+  padding: 2px 5px;
+}
+.service-list {
+  margin-bottom: 20px;
+}
+
+/* ==>  portfolio Style <== */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.portfolio-card-description {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding-bottom: 20px;
+}
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+}
+.portfolio-card h4,
+.portfolio-card h5,
+.portfolio-card p,
+.portfolio-card a {
+  margin: 0;
+  padding: 0;
+  padding: 5px 20px;
+}
+.portfolio-card h4 {
+  font-size: 2rem;
+}
+.portfolio-card h5 {
+  font-size: 2.2rem;
+}
+.portfolio-card a {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+/* ==>  experts Style <== */
+.experts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.experts-content {
+  display: flex;
+  text-align: center;
+}
+.experts-content figure,
+.experts-content p {
+  margin: 0;
+}
+.experts-content img {
+  width: 100%;
+  opacity: 0.7;
+  transition: .5s ease;      
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.experts-content img:hover  /* changing the opacity of an image */
+{
+  opacity: 1;
+}
+
+/* ==>  CTA Style <== */
+
+.cta
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 20px;
+}
+.cta section
+{
+  background-color: white;
+  margin: 2px 0;
+  padding: 10px 0;
+}
+.cta h3,.cta p
+{
+  padding: 0;
+  margin: 0;
+  padding: 5px 0;
+}
+.cta-chat-button
+{
+  display: inline-block;
+  width: 115px;
+  height: 25px;
+  background-color: #d58d44;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  text-decoration: none;
+}
+.cta-chat-button:hover
+{
+  background-color: #ae7236;
+}
+
+/* ==>  Footer Style <== */
+
+footer {
+  border: solid;
+  border-color: black;
+  background-color: black;
+  padding: 0 20px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address > div {  /* using this code to target the all div childs that come under footer address I have the pseudo code, because I did not want to use extra classes or id's to control the tags */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.footer-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu div:nth-child(1), /* using this code to get the 1st and 2nd child of div */
+.footer-menu div:nth-child(2) {
+  display: none;
+}
+
+.inputfield-signup {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #d58d44;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.signup-button {
+  display: flex;
+  border: 1px solid #d58d44;
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 1.8rem;
+  color: white;
+  margin: 20px 0;
+  padding: 10px 50px;
+  width: 50%;
+  cursor: pointer;
+  justify-content: center;
+}
+.signup-button:hover
+{
+  color: #c98c50;
+  background-color: white;
+  
+}
+.footer-disclaimer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-media-icons
+{
+  display: flex;
+  gap: 10px;
+}
+.footer-media-icons i
+{
+  background-color: #2d2d2d;
+  padding: 10px 15px;
+}
+.footer-disclaimer a
+{
+  color: #d58d44;
+  text-decoration: underline;
+}
+.footer-disclaimer p 
+{
+  font-size: 1rem;
+}
+footer a {
+  color: #9a9faa;;
+  text-decoration: none;
+}
+
+/* ------------------   Contact Page   ------------------------*/
+
+/* ==>  Contact banner Style <== */
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/contactus-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.contact-banner h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.contact-banner p {
+  font-size: 2.2rem;
+  padding: 0;
+  margin: 0;
+}
+.contact-us {
+  width: 100%;
+}
+.contact-us div {
+  padding: 0 10px;
+}
+
+/* ==>  Iframe Style <== */
+ iframe
+ {
+  overflow: hidden;
+  border: none;
+  width: 100%;
+ }
+
+/* ==>  Form Style <== */
+
+.inputfield-text,
+.input-select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-submit {
+  width: 100%;
+  background-color: #d58d44;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* ------------------   Portfolio Page   ------------------------*/
+
+/* ==>  Blog Style <== */
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.blog-content
+{
+  display: flex;
+  flex-direction: column;
+}
+.blog-content figure
+{
+  margin: 0;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.blog-content img
+{
+  width: 100%;
+}
+.blog-content figcaption,.blog-content h2,.blog-content a
+{
+  padding: 0 10px;
+}
+.blog-content h2
+{
+  font-size: 1.8rem;
+}
+.blog-content a
+{
+  text-decoration: underline;
+}
+
+/* ==>  Billing Style <== */
+
+.billing 
+{
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+.billing-content {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 2.1vw;
+}
+
+.billing-content td, .billing-content th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.billing-content tr td:nth-child(1),.billing-content tr th:nth-child(1) 
+{
+  text-align: center;
+}
+.billing-content tr td:nth-child(6),.billing-content tr th:nth-child(6) /* hiding two coloum in mobile view */
+{
+  display: none;
+}
+.billing-content tr td:nth-child(3),.billing-content tr th:nth-child(3) 
+{
+  display: none;
+}
+
+.billing-content tr:nth-child(even) /* use this code to get even child of tr tag */
+{
+  background-color: white;
+}
+
+.billing-content tr:hover  /* changing the color of table row when cursor is over the row */
+{
+  background-color: #ddd;
+}
+
+.billing-content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d58d44;
+  color: white;
+}
+
+
+
+/*   ==> Media query for desktop <==  */
+
+@media screen and (min-width: 1200px) {
+
+/* ==>  Common code Start <== */
+
+  body {
+    font-size: 1.6rem;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  .service,
+  .portfolio,
+  .experts,
+  .footer-container,
+  .footer-disclaimer,
+  .contact-us,
+  .blog,
+  .cta,
+  .billing 
+  {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* ==>  Common code End <== */
+
+  /* ==>  Nav Style desktop <== */
+
+  nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+  /* ==>  Hero Style <== */
+  .hero {
+    height: 85vh;
+  }
+  .hero h1 {
+    font-size: 11vw;
+    font-weight: 900;
+    letter-spacing: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+  .hero p
+  {
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+  }
+  /* ==>  Service Style desktop <== */
+
+  .service-detail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-list {
+    flex: 0 0 48%;
+    margin: 1%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .service-content {
+    gap: 0;
+    flex: 0 0 60%;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  .service-title {
+    margin: 1%;
+    padding: 20px;
+  }
+  .service-img {
+    align-self: flex-end;
+    flex: 0 0 40%;
+    box-sizing: border-box;
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* ==>  portfolio Style desktop <== */
+  .portfolio {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .portfolio-title {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  .portfolio-title-heading {
+    flex: 1;
+  }
+  .portfolio-title-heading h2 {
+    font-size: 2.5rem;
+  }
+  .portfolio-title-heading h3 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .portfolio-title p {
+    flex: 2;
+    border-left: solid;
+    border-color: #d58d44;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin: 5px 20px;
+  }
+  .portfolio-card {
+    display: flex;
+    align-items: center;
+  }
+  .portfolio-card img {
+    flex: 1;
+    height: 500px;
+    z-index: -1;
+  }
+  .portfolio-card-description {
+    flex: 1;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-left: -25%;
+    max-height: 500px;
+  }
+  .portfolio-card > div:nth-child(1) {
+    margin-left: 0;
+    margin-right: -25%;
+  }
+
+  /* ==>  experts Style desktop <== */
+  .experts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 60px;
+    margin: 50px auto;
+  }
+  .experts-heading {
+    flex: 1.5;
+  }
+  .experts-heading p {
+    padding: 0 20px;
+  }
+  .experts-heading-title {
+    border-bottom: solid;
+    border-color: #d58d44;
+  }
+  .experts-content {
+    flex: 1;
+  }
+  .experts-heading h2 {
+    font-size: 2.5rem;
+  }
+  .experts-heading h3 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  /* ==>  CTA Style <== */
+
+  .cta
+  {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .cta section
+  {
+    flex: 1;
+    padding: 50px 0;
+  }
+
+  /* ==>  Footer Style desktop <== */
+  .footer-container {
+    padding: 0;
+  }
+  .footer-address-container {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .footer-menu div:nth-child(1),
+  .footer-menu div:nth-child(2) {
+    display: flex;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .footer-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-menu-list li {
+    line-height: 30px;
+  }
+  .footer-disclaimer {
+    padding: 0;
+    text-align: left;
+  }
+
+  /* ------------------   Contact Page   ------------------------*/
+
+  /* ==>  Form Style desktop <== */
+  .contact-us {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  iframe {
+    margin: 20px 0;
+    flex: 1.5;
+  }
+  .contact-us div {
+    padding: 0 20px;
+    flex: 1;
+  }
+
+/* ------------------   Portfolio Page   ------------------------*/
+
+/* ==>  Blog Style desktop <== */
+
+.blog {
+  padding: 0;
+  margin-top: 20px;
+}
+.blog-title {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.blog-title-heading {
+  flex: 1;
+}
+.blog-title-heading h2 {
+  font-size: 2.5rem;
+}
+.blog-title-heading h3 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.blog-title p {
+  flex: 2;
+  border-left: solid;
+  border-color: #d58d44;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin: 5px 20px;
+}
+.blog-content div
+{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* ==>  Billing Style <== */
+
+.billing
+{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 30px;
+}
+.billing-heading {
+  flex: 1.5;
+}
+.billing-heading p {
+  padding: 0 20px;
+}
+.billing-heading-title {
+  border-bottom: solid;
+  border-color: #d58d44;
+}
+.billing-content {
+  font-size: 1.6rem;
+}
+.billing-content tr td:nth-child(6),.billing-content tr th:nth-child(6) /* showing the last column of table for desktop */
+{
+  display: table-cell; 
+}
+.billing-content tr td:nth-child(3),.billing-content tr th:nth-child(3) 
+{
+  display: table-cell;
+}
+}

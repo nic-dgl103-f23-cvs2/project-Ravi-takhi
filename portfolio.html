@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective design solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat&family=Prompt&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function showNav() {
+        let mainNav = document.getElementById("main-nav");
+        let navbarToggle = document.getElementById("navbar-toggle");
+
+        if (navbarToggle.classList.contains("active")) {
+          mainNav.style.display = "none";
+          navbarToggle.classList.remove("active");
+        } else {
+          mainNav.style.display = "flex";
+          navbarToggle.classList.add("active");
+        }
+      }
+    </script>
+    <!-- DGL 103 CVS1 - Ravinder Singh - Project -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Menu Bar -->
+      <nav>
+        <!-- Menu Button -->
+        <span id="navbar-toggle" onclick="showNav()">
+          <i class="fa fa-bars color-theme-highlighted"></i></span>
+        <!-- Website Logo -->
+        <img src="images/logo.PNG" alt="logo" width="80">
+        <!-- Menu List -->
+        <ul id="main-nav">
+          <li>
+            <a class="nav-links"  href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-links" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-links" href="#">Design & Build</a>
+          </li>
+          <li>
+            <a class="nav-links" href="#">Special Feature</a>
+          </li>
+          <li>
+            <a class="nav-links" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- blog -->
+      <section class="blog">
+        <div class="blog-title">
+          <div class="blog-title-heading">
+            <h2 class="color-theme-highlighted">Design & Build</h2>
+            <h3 class="color-theme-dark">All Projects</h3>
+          </div>
+          <p>
+            Together we will put your ideas into a buildable design. Our experience as builders can help the design process be more efficient, effective, logical, and affordable. We can take your ideas, and collaboratively create floor plans and 3D models of your dream build
+          </p>
+        </div>
+        <div class="blog-content">
+          <div>
+            <figure>
+              <img src="images/blog-img-1.jpg" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">John Doe | July 15,2019
+                <h2 class="color-theme-dark">The beginning of Everything as quexceptuarl We know</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="images/blog-img-2.jpg" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">Joey Rivera | March 21,2019
+                <h2 class="color-theme-dark">Contemporary Comfort: Fusion of Style and Functionality</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="images/blog-img-3.jpg" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">Eli Bell | Jan 10,2021
+                <h2 class="color-theme-dark">Urban Oasis: Stylish Exterior Living Spaces"</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="images/blog-img-4.png" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">Aidan Buttler | June 07,2022
+                <h2 class="color-theme-dark">Architectural Harmony: Transformative Outdoor Design</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="images/blog-img-5.png" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">Peter Brain | Aug 05,2022
+                <h2 class="color-theme-dark">Elegance Unveiled: Modern Living Space</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+
+            </figure>
+            <figure>
+              <img src="images/blog-img-6.png" alt="Team image" width="600">
+              <figcaption class="color-theme-highlighted">George Slomp | April 25,2023
+                <h2 class="color-theme-dark">Nature's Embrace: Landscaped Beauty Beyond Walls</h2>
+                <a class="color-theme-highlighted"> Read more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!--Portfolio-->
+      <section class="portfolio">
+        <div class="portfolio-title">
+          <div class="portfolio-title-heading">
+            <h2 class="color-theme-highlighted">Explore Portfolios</h2>
+            <h3 class="color-theme-dark">Latest projects</h3>
+          </div>
+          <p>
+            Explore our latest projects where innovative design meets functionality, creating homes that redefine modern living. From sleek interiors to sustainable architecture, our portfolio showcases a commitment to excellence in every detail.
+          </p>
+        </div>
+        <div class="portfolio-content">
+          <section class="portfolio-card">
+            <img src="images/Exterior.jpg" width="600" alt="Exterior design">
+            <div class="portfolio-card-description">
+              <h4 class="color-theme-highlighted">Exterior</h4>
+              <h5 class="color-theme-dark">Modern house design</h5>
+              <p>
+                Our architecture design transforms living spaces with a modern
+                house exterior that captivates. Clean lines, avant-garde
+                materials, and expansive windows define a sleek aesthetic. We
+                seamlessly integrate indoor and outdoor elements, fostering a
+                harmonious blend of functionality and style. With a focus on
+                innovation, our design showcases a contemporary vision that
+                redefines modern living. Elevate your home with our cutting-edge
+                approach to architectural excellence.
+              </p>
+              <a class="color-theme-highlighted" href="#"> View Project</a>
+            </div>
+          </section>
+          <!-- Card 2-->
+          <section class="portfolio-card">
+            <div class="portfolio-card-description">
+              <h4 class="color-theme-highlighted">Interior</h4>
+              <h5 class="color-theme-dark">Modern lobby area</h5>
+              <p>
+                Immerse yourself in our modern house interior design, a
+                testament to refined sophistication and functionality. Every
+                detail harmonizes sleek aesthetics with practical living, from
+                innovative furniture choices to thoughtfully curated decor
+                elements. Open spaces and natural light create an inviting
+                ambiance, enhancing the sense of spaciousness. Our architectural
+                prowess transforms interiors into a contemporary haven, blending
+                comfort with cutting-edge design.
+              </p>
+              <a class="color-theme-highlighted" href="#"> View Project</a>
+            </div>
+            <img src="images/interior.jpg" width="600" alt="Interior design">
+          </section>
+        </div>
+      </section>
+      <section class="billing">
+        <div class="billing-heading">
+          <div class="billing-heading-title">
+            <h2 class="color-theme-highlighted">Billing</h2>
+            <h3 class="color-theme-dark">Billing details</h3>
+          </div>
+          <p>
+            Explore details of our billing information, including invoices, rates, and total amounts
+          </p>
+        </div>
+        <table class="billing-content">
+          <tr>
+            <th>Invoice Number</th>
+            <th>Client Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>Johnson Design Group</td>
+            <td>Web Development</td>
+            <td>1 project</td>
+            <td>$1,500.00 per project</td>
+            <td>$1,500.00</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Taylor Interiors</td>
+            <td>Graphic Design</td>
+            <td>5 designs</td>
+            <td>$100.00 per design</td>
+            <td>$500.00</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Smith & Associates</td>
+            <td>Consulting Services</td>
+            <td>8 hours</td>
+            <td>$60 per hour</td>
+            <td>$480.00</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Williams Builders</td>
+            <td>Building Construction</td>
+            <td>1 project</td>
+            <td>$50,000.00 per project</td>
+            <td>$50,000.00</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Brown Innovations</td>
+            <td>Interior Design</td>
+            <td>3 rooms</td>
+            <td>$5,000.00 per room</td>
+            <td>$15,000.00</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>Davis Creations</td>
+            <td>Building Construction</td>
+            <td>1 project</td>
+            <td>$60,000.00 per project</td>
+            <td>$60,000.00</td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td>Miller Developments</td>
+            <td>Consulting Services</td>
+            <td>12 hours</td>
+            <td>$55 per hour</td>
+            <td>$660.00</td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td>Wilson Architects</td>
+            <td>Interior Design</td>
+            <td>2 rooms</td>
+            <td>$6,000.00 per room</td>
+            <td>$12,000.00</td>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td>Moore Homes Inc.</td>
+            <td>Building Construction</td>
+            <td>1 project</td>
+            <td>$75,000.00 per project</td>
+            <td>$75,000.00</td>
+        </tr>
+        </table>
+      </section>
+      <!-- CTA section-->
+      <section class="cta">
+        <section>
+          <i class="fa fa-phone fa-2x color-theme-highlighted" aria-hidden="true"></i>
+          <h3 class="color-theme-dark">Our phone</h3>
+          <p>778-647-2266</p>
+        </section>
+        <section>
+          <i class="fa fa-envelope fa-2x color-theme-highlighted" aria-hidden="true"></i>
+          <h3 class="color-theme-dark">Our Email</h3>
+          <p>office@buildwithperspective.com</p>
+        </section>
+        <section>
+          <i class="fa fa-comments fa-2x color-theme-highlighted" aria-hidden="true"></i>
+          <h3 class="color-theme-dark">Chat</h3>
+          <a class="cta-chat-button" href="#"> Let's Chat</a>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-container">
+        <div class="footer-address-container">
+          <div class="footer-info">
+            <img src="images/logo.PNG" alt="logo" width="100">
+            <p>
+              Transforming Visions into Homes | Perspective Design Building - Expertise in Design and Build Services
+            </p>
+          </div>
+          <div class="footer-address">
+            <div>
+              <i class="fa fa-map-marker fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>2463E Rosewall Crescent, Courtenay, BC V9N 1H8</p>
+            </div>
+            <div>
+              <i class="fa fa-phone fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>778-647-2266</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope fa-1x color-theme-highlighted" aria-hidden="true"></i>
+              <p>office@buildwithperspective.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Menu</h3>
+            <ul>
+              <li> <a href="#">How it works</a> </li>
+              <li><a href="#">Features</a></li>
+              <li> <a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+          </div>
+          <div class="footer-menu-list">
+            <h3 class="color-theme-light">Service</h3>
+            <ul>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Stores</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="color-theme-light">Newsletter</h3>
+            <ul>
+              <li>
+                Sign up for our mailing list to get latest updates and offers
+              </li>
+              <li>
+                <form action="#" method="POST">
+                  <input class="inputfield-signup" type="text" required placeholder="  Enter your Email" name="signup" id="signup">
+                  <input class="signup-button" type="submit" name="SignUp" value="SignUp">
+                </form>
+              </li>
+              <li class="footer-media-icons">
+                <a href="https://www.facebook.com/people/Perspective-Design-Build-Ltd/100063958185786/">
+                  <i class="fa fa-facebook fa-1x color-theme-light" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/perspectivedesignbuildltd/">
+                  <i class="fa fa-instagram fa-1x color-theme-light" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="footer-disclaimer">
+        <a href="#"><b>Terms and Conditions</b></a>
+        <b> &copy; 2023 Form | All rights reserved</b>
+        <p class="color-theme-light">This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+      </section>
+    </footer>
+  </body>
+</html>
