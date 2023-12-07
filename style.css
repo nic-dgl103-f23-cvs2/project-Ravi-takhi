@@ -230,7 +230,7 @@ nav a:hover  /* changing the color of Menu list elements */
   text-align: center;
 }
 .experts-content figure,
-.experts-content h4 {
+.experts-content p {
   margin: 0;
 }
 .experts-content img {
@@ -402,6 +402,14 @@ footer a {
 .contact-us div {
   padding: 0 10px;
 }
+
+/* ==>  Iframe Style <== */
+ iframe
+ {
+  overflow: hidden;
+  border: none;
+  width: 100%;
+ }
 
 /* ==>  Form Style <== */
 
