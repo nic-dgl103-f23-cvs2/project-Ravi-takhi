@@ -66,6 +66,8 @@ nav li {
   color: rgba(255, 255, 255, 0.8);
   font-size: 2.4rem;
 }
+
+
 /* ------------------   Home Page   ------------------------*/
 
 /* ==>  Hero Style <== */
@@ -82,12 +84,12 @@ nav li {
   height: 50vh;
 }
 .hero h1 {
-  font-size: 11vw;
+  font-size: 7vw;
   text-transform: uppercase;
   letter-spacing: 2rem;
 }
 .hero p {
-  font-size: 1.8vw;
+  font-size: 2.2vw;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -121,6 +123,10 @@ nav li {
   font-size: 2.8rem;
   margin: 0;
   padding: 0;
+}
+.service-title p
+{
+  font-style: italic;
 }
 .service-detail {
   text-align: left;
@@ -286,8 +292,28 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-.footer-disclaimer a {
+.footer-media-icons
+{
+  display: flex;
+  gap: 10px;
+}
+.footer-media-icons i
+{
+  background-color: #2d2d2d;
+  padding: 10px 15px;
+}
+.footer-disclaimer a
+{
   color: #d58d44;
+  text-decoration: underline;
+}
+.footer-disclaimer p 
+{
+  font-size: 1rem;
+}
+footer a {
+  color: #9a9faa;;
+  text-decoration: none;
 }
 
 /* ------------------   Contact Page   ------------------------*/
@@ -394,10 +420,47 @@ textarea {
   text-decoration: underline;
 }
 
+/* ==>  Billing Style <== */
+
+.billing 
+{
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+.billing-content {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 2.1vw;
+}
+
+.billing-content td, .billing-content th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.billing-content tr:nth-child(even) /* use this code to get even child of tr tag */
+{
+  background-color: white;
+}
+
+.billing-content tr:hover  /* changing the color of table row when cursor is over the row */
+{
+  background-color: #ddd;
+}
+
+.billing-content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d58d44;
+  color: white;
+}
+
 
 
 /*   ==> Media query for desktop <==  */
-@media screen and (min-width: 1170px) {
+
+@media screen and (min-width: 1200px) {
   body {
     font-size: 1.6rem;
     font-family: 'Prompt', sans-serif;
@@ -442,6 +505,7 @@ textarea {
     height: 85vh;
   }
   .hero h1 {
+    font-size: 11vw;
     font-weight: 900;
     letter-spacing: 3rem;
     padding: 0;
@@ -451,7 +515,7 @@ textarea {
   {
     padding: 0;
     margin: 0;
-    font-size: 1.4em;
+    font-size: 3vh;
   }
   /* ==>  Service Style desktop <== */
 
@@ -462,7 +526,9 @@ textarea {
   .footer-disclaimer,
   .contact-us,
   .blog,
-  .cta {
+  .cta,
+  .billing 
+  {
     width: calc(100% - 300px);
     margin: 0 auto;
     display: flex;
@@ -582,20 +648,21 @@ textarea {
 
   .cta
   {
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 5px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .cta section
   {
     flex: 1;
-    
     padding: 50px 0;
   }
 
-  /* ==>  portfolio Style desktop <== */
+  /* ==>  Footer Style desktop <== */
   .footer-container {
     padding: 0;
   }
@@ -646,10 +713,62 @@ textarea {
 
 /* ==>  Blog Style desktop <== */
 
+.blog {
+  padding: 0;
+  margin-top: 20px;
+}
+.blog-title {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.blog-title-heading {
+  flex: 1;
+}
+.blog-title-heading h2 {
+  font-size: 2.5rem;
+}
+.blog-title-heading h3 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.blog-title p {
+  flex: 2;
+  border-left: solid;
+  border-color: #d58d44;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin: 5px 20px;
+}
 .blog-content div
 {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+
+/* ==>  Billing Style <== */
+
+.billing
+{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 30px;
+}
+.billing-heading {
+  flex: 1.5;
+}
+.billing-heading p {
+  padding: 0 20px;
+}
+.billing-heading-title {
+  border-bottom: solid;
+  border-color: #d58d44;
+}
+.billing-content {
+  font-size: 1.6rem;
 }
 }
