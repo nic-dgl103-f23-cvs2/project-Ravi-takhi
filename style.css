@@ -21,12 +21,17 @@ body {
 .color-theme-dark {
   color: black;
 }
+
 .color-theme-light {
   color: white;
 }
+
 .color-theme-highlighted {
   color: #d58d44;
 }
+
+
+/* ------------------   Home Page   ------------------------*/
 
 /* ==>  Nav Style <== */
 
@@ -66,9 +71,11 @@ nav li {
   color: rgba(255, 255, 255, 0.8);
   font-size: 2.4rem;
 }
+nav a:hover  /* changing the color of Menu list elements */
+{
+  color: #d58d44;
+}
 
-
-/* ------------------   Home Page   ------------------------*/
 
 /* ==>  Hero Style <== */
 .hero {
@@ -87,10 +94,38 @@ nav li {
   font-size: 7vw;
   text-transform: uppercase;
   letter-spacing: 2rem;
+  transition: transform 10s;
+  transition: color 1s; /* For modern browsers */
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.hero h1:hover {   /* zoom in and out animation effect */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out 0.2s;
+  color: #c98c50
+}
+.hero p  /* Reference of this animation of from this website. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations */
+{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .hero p {
-  font-size: 2.2vw;
-  font-weight: 500;
+  font-size: 3.2vw;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -146,6 +181,7 @@ nav li {
 }
 
 /* ==>  portfolio Style <== */
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -199,6 +235,14 @@ nav li {
 }
 .experts-content img {
   width: 100%;
+  opacity: 0.7;
+  transition: .5s ease;      
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.experts-content img:hover  /* changing the opacity of an image */
+{
+  opacity: 1;
 }
 
 /* ==>  CTA Style <== */
@@ -222,7 +266,7 @@ nav li {
   margin: 0;
   padding: 5px 0;
 }
-.cta a
+.cta-chat-button
 {
   display: inline-block;
   width: 115px;
@@ -235,6 +279,10 @@ nav li {
   font-weight: bold;
   line-height: 25px;
   text-decoration: none;
+}
+.cta-chat-button:hover
+{
+  background-color: #ae7236;
 }
 
 /* ==>  Footer Style <== */
@@ -250,7 +298,7 @@ footer {
   flex-direction: column;
 }
 
-.footer-address > div {
+.footer-address > div {  /* using this code to target the all div childs that come under footer address I have the pseudo code, because I did not want to use extra classes or id's to control the tags */
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -261,7 +309,7 @@ footer {
   padding: 0;
   margin: 0;
 }
-.footer-menu div:nth-child(1),
+.footer-menu div:nth-child(1), /* using this code to get the 1st and 2nd child of div */
 .footer-menu div:nth-child(2) {
   display: none;
 }
@@ -286,6 +334,14 @@ footer {
   margin: 20px 0;
   padding: 10px 50px;
   width: 50%;
+  cursor: pointer;
+  justify-content: center;
+}
+.signup-button:hover
+{
+  color: #c98c50;
+  background-color: white;
+  
 }
 .footer-disclaimer {
   display: flex;
@@ -437,6 +493,18 @@ textarea {
   border: 1px solid #ddd;
   padding: 8px;
 }
+.billing-content tr td:nth-child(1),.billing-content tr th:nth-child(1) 
+{
+  text-align: center;
+}
+.billing-content tr td:nth-child(6),.billing-content tr th:nth-child(6) /* hiding two coloum in mobile view */
+{
+  display: none;
+}
+.billing-content tr td:nth-child(3),.billing-content tr th:nth-child(3) 
+{
+  display: none;
+}
 
 .billing-content tr:nth-child(even) /* use this code to get even child of tr tag */
 {
@@ -461,10 +529,32 @@ textarea {
 /*   ==> Media query for desktop <==  */
 
 @media screen and (min-width: 1200px) {
+
+/* ==>  Common code Start <== */
+
   body {
     font-size: 1.6rem;
     font-family: 'Prompt', sans-serif;
   }
+
+  .service,
+  .portfolio,
+  .experts,
+  .footer-container,
+  .footer-disclaimer,
+  .contact-us,
+  .blog,
+  .cta,
+  .billing 
+  {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* ==>  Common code End <== */
 
   /* ==>  Nav Style desktop <== */
 
@@ -519,22 +609,6 @@ textarea {
   }
   /* ==>  Service Style desktop <== */
 
-  .service,
-  .portfolio,
-  .experts,
-  .footer-container,
-  .footer-disclaimer,
-  .contact-us,
-  .blog,
-  .cta,
-  .billing 
-  {
-    width: calc(100% - 300px);
-    margin: 0 auto;
-    display: flex;
-    padding: 10px 0 0 10px;
-    box-sizing: border-box;
-  }
   .service-detail {
     display: flex;
     flex-wrap: wrap;
@@ -748,7 +822,6 @@ textarea {
   gap: 30px;
 }
 
-
 /* ==>  Billing Style <== */
 
 .billing
@@ -770,5 +843,13 @@ textarea {
 }
 .billing-content {
   font-size: 1.6rem;
+}
+.billing-content tr td:nth-child(6),.billing-content tr th:nth-child(6) /* showing the last column of table for desktop */
+{
+  display: table-cell; 
+}
+.billing-content tr td:nth-child(3),.billing-content tr th:nth-child(3) 
+{
+  display: table-cell;
 }
 }
